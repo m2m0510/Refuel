@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "REFUEL",
+    "slug": "refuel-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#050505",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.refuel.athletic",
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch"],
+        "NSLocationWhenInUseUsageDescription": "REFUEL requires GPS location to measure pacing, distance, and elevation for endurance workouts.",
+        "NSHealthShareUsageDescription": "REFUEL syncs biometric resting heart rate, HRV, and VO2 Max from Apple Health.",
+        "NSHealthUpdateUsageDescription": "REFUEL writes completed endurance workouts and calorie burn to Apple Health."
+      }
+    },
+    "android": {
+      "package": "com.refuel.athletic",
+      "adaptiveIcon": {
+        "backgroundColor": "#050505"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "BODY_SENSORS",
+        "ACTIVITY_RECOGNITION"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.ico"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "REFUEL needs continuous GPS for real-time pacing telemetry."
+        }
+      ]
+    ]
+  }
+}

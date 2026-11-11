@@ -1,0 +1,6 @@
+{
+  "name": "REFUEL - Athletic Performance & Training",
+  "description": "Premium athletic technology mobile application inspired by Strava and Apple Health. Track activities, manage weekly training schedules, analyze VO2 max and recovery metrics, and sync with Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
